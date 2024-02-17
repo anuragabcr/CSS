@@ -1,0 +1,45 @@
+.heading {
+  color: darkcyan;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.heading:hover {
+  color: aqua;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.title-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+  .title {
+    font-size: 4cap;
+    text-transform: uppercase;
+    transition: all 1s ease-out;
+  }
+  .title:hover {
+    color: #1f93ff;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  border: 3px solid rgb(75, 100, 212);
+  border-radius: 20px;
+  .menu-item {
+    padding: 5px;
+    a {
+      text-decoration: none;
+      font-size: 3cap;
+      text-transform: uppercase;
+      color: rgb(14, 62, 46);
+      transition: all 1s ease-out;
+    }
+  }
+  .menu-item:hover {
+    font-size: 3.5cap;
+    color: #1f93ff;
+  }
+}
