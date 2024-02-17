@@ -1,0 +1,33 @@
+.navmenu ul {
+  position: relative;
+}
+.navmenu ul::after {
+  content: "";
+  position: absolute;
+  height: calc(100%);
+  top: 0;
+  z-index: -1;
+  left: 20px;
+  border: 2px dashed black;
+}
+
+.navmenu ul li a {
+  position: relative;
+}
+
+.navmenu ul li a::before {
+  content: "";
+  position: absolute;
+  background-color: aqua;
+  width: 10px;
+  height: 10px;
+  left: -24px;
+  top: 50%;
+  border: 50px;
+  transform: rotate(45deg);
+}
+
+.navmenu ul li a:hover ~ .navmenu ul {
+  background-color: brown;
+  border-color: aqua;
+}
